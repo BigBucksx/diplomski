@@ -51,13 +51,13 @@ Zapisano u matričnoj formi:
 
 Odnosno
 \begin{equation}\label{eq:sustav_diferencijalnih_matricni_kratko}
-    \mm\vtor{u}{:}+\kk\vtor{u}{}=\vtor{0}{}
+    \mm\{\ddot{u}\}+\kk\{u\}=\{0\}
 \end{equation}
 Iz \eqref{eq:sustav_diferencijalnih} i \eqref{eq:sustav_diferencijalnih_matricno}
 vidi se da je sustav diferencijalnih jednadžbi povezan preko krutosti odnosno
 matrice krutosti. Opći oblik rješenja sustava je slijedeći:
 \begin{equation}\label{eq:rjesenje_opcenitog_sustava}
-    \vtor{u(t)}{} = \vtor{\psi}{}q(t)
+    \{u(t)\} = \{\psi\}q(t)
 \end{equation}
 
 Vektor $\psi$ možemo shvatiti kao konstantu integracije, a funkcija $q(t)$ je
@@ -77,13 +77,13 @@ Druga derivacija \eqref{eq:jednostavna_harmonijska_funkcija} jest:
 
 Stoga, druga derivacija od \eqref{eq:rjesenje_opcenitog_sustava} glasi:
 \begin{equation}\label{eq:rjesenje_opcenitog_sustava_dd}
-    \vtor{u}{:}=-\omega^2q(t)\vtor{\psi}{}
+    \{\ddot{u}\}=-\omega^2q(t)\{\psi\}
 \end{equation}
 
 Uvrštavanjem \eqref{eq:rjesenje_opcenitog_sustava} i \eqref{eq:rjesenje_opcenitog_sustava_dd}
 u \eqref{eq:sustav_diferencijalnih_matricni_kratko} dobijemo:
 \begin{equation}
-    (\vtor{\psi}{}\kk-\omega^2\vtor{\psi}{}\mm)q(t)=\vtor{0}{}
+    (\{\psi\}\kk-\omega^2\{\psi\}\mm)q(t)=\{0\}
 \end{equation}
 Prvo trivijalno rješenje je za $q(t)=0$ što implicira da je $u(t)=0$ (sustav
 miruje). Netrivijalno rješenje se dobije izjednačavanjem zagrade s nulom:
@@ -101,7 +101,7 @@ dvije nepoznanice:
 
 Prebacivanjem nepoznanica na jednu stranu dobijemo
 \begin{equation}\label{eq:vlastite_vrijednosti_homogeno}
-    (\kk-\omega^2\mm)\vtor{\psi}{}=\vtor{0}{}
+    (\kk-\omega^2\mm)\{\psi\}=\{0\}
 \end{equation}
 
 U općenitom slučaju, izraz \eqref{eq:vlastite_vrijednosti_homogeno} predstavlja
@@ -135,7 +135,7 @@ vlastiti vektori linearno nezavisni. Skup od n linearno nezavisnih vektora čini
 n-dimenzionalnog vektorskog prostora, pa je ukupno rješenje sustava diferencijalnih
 jednadžbi linearna kombinacija svih pojedinačnih rješenja.
 \begin{equation}\label{eq:opce_rjesenje_sustava}
-    \vtor{u(t)}{}=\sum_{n=1}^N\vtor{\psi}{}_nq_n 
+    \{u(t)\}=\sum_{n=1}^N\{\psi\}_nq_n 
 \end{equation}
 Pri čemu je $q_n$:
 \begin{equation}
@@ -208,7 +208,7 @@ Matricu $\ppsi$ nazivamo modalna matrica, a komponente vektora $q$ nazivaju se
 modalne koordinate. Opće rješenje pod \eqref{eq:opce_rjesenje_sustava} sada možemo 
 zapisati matrično kao:
 \begin{equation}
-    \vtor{u(t)}{} = \ppsi \vtor{q}{}
+    \{u(t)\} = \ppsi \{q\}
 \end{equation}
 
 
@@ -257,20 +257,20 @@ polinoma za $\omega^2$. Modalne vektore možemo zapisati kao:
 Ukupno rješenje sustava jest linearna kombinacija slijedećih vektora:
 \begin{equation}
     \begin{dcases}
-        \vtor{u}_1(t) = \vtor{\psi}_1 q_1(t) = \vtor{\psi}_1 (A_1\cos(\omega_1 t) + B_1\sin(\omega_1 t))\\
-        \vtor{u}_2(t) = \vtor{\psi}_2 q_2(t) = \vtor{\psi}_2 (A_2\cos(\omega_2 t) + B_2\sin(\omega_2 t))
+        \{u_1(t)\} = \{\psi\}_1 q_1(t) = \{\psi\}_1 (A_1\cos(\omega_1 t) + B_1\sin(\omega_1 t))\\
+        \{u_2(t)\} = \{\psi\}_2 q_2(t) = \{\psi\}_2 (A_2\cos(\omega_2 t) + B_2\sin(\omega_2 t))
     \end{dcases}
 \end{equation}
 
 Stoga, ukupno opće rješenje glasi:
 \begin{equation}\label{eq:ukupno_opce_rjesenje_2dof}
-    \vtor{u}(t)=\vtor{u}_1(t)+\vtor{u}_2(t)
+    \{u(t)\}=\{u_1(t)\}+\{u_2(t)\}
 \end{equation}
 
 Bitno je za napomenuti da modalni vektor $\psi$ ne određuje maksimalne iznose
 ordinata već samo njihov relativni odnos, tj. modalni oblik ili oblik titranja. Da
 bismo dobili amplitude $A_n$ i $B_n$, potrebno je rješiti inicijalni problem oblika 
-$\vtor{u(0)}{} = \vtor{u}{}$ i $\vtor{u(0)}{.}=\vtor{u}{}$. Za slučaj slobodnog titranja,
+$\{u(0)\} = \{u\}$ i $\{\dot{u}(0)\}=\{\dot{u}\}$. Za slučaj slobodnog titranja,
 konstante $A_n$ i $B_n$ glase:
 \begin{align}
     A_n&=u_n(0)\\

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28.555pt" height="28.555pt" viewBox="0 0 28.555 28.555" version="1.1">
+<defs>
+<g>
+<symbol overflow="visible" id="glyph0-0">
+<path style="stroke:none;" d=""/>
+</symbol>
+<symbol overflow="visible" id="glyph0-1">
+<path style="stroke:none;" d="M 13.671875 -8.171875 L 13.671875 -9.5625 L 0.984375 -9.5625 L 0.984375 -8.171875 Z M 13.671875 -3.140625 L 13.671875 -4.53125 L 0.984375 -4.53125 L 0.984375 -3.140625 Z M 13.671875 -3.140625 "/>
+</symbol>
+</g>
+<clipPath id="clip1">
+  <path d="M 0 0 L 28.554688 0 L 28.554688 28.554688 L 0 28.554688 Z M 0 0 "/>
+</clipPath>
+</defs>
+<g id="surface1">
+<g clip-path="url(#clip1)" clip-rule="nonzero">
+<path style="fill:none;stroke-width:1.41731;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 10.957375 0.00065625 C 10.957375 6.051438 6.051125 10.957688 0.00034375 10.957688 C -6.054344 10.957688 -10.960594 6.051438 -10.960594 0.00065625 C -10.960594 -6.054031 -6.054344 -10.960281 0.00034375 -10.960281 C 6.051125 -10.960281 10.957375 -6.054031 10.957375 0.00065625 Z M 10.957375 0.00065625 " transform="matrix(1,0,0,-1,14.277,14.278)"/>
+</g>
+<g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
+  <use xlink:href="#glyph0-1" x="6.94" y="19.062"/>
+</g>
+</g>
+</svg>

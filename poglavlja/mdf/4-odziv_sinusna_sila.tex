@@ -65,33 +65,33 @@ slici
 
 Odnosno:
 \begin{equation}\label{eq:jednadzba_gibanja_matricno_kratko}
-    \mm\vtor{u}{:}+k\vtor{u}{}=\vtor{p_n}{}\sin(\omega t)
+    \mm\{\ddot{u}\}+k\{u\}=\{p_n\}\sin(\omega t)
 \end{equation}
 
-Gdje je $\vtor{p_n}{}$ vektor amplituda harmonijskih sila. Odziv sustava biti će
+Gdje je $\{p_n\}$ vektor amplituda harmonijskih sila. Odziv sustava biti će
 harmonijski, jednake frekvencije, pa partikularno rješenje možemo pretpostaviti:
 \begin{equation}\label{eq:partikularno_pretpostavka}
-    \vtor{u_p(t)}{}=\vtor{U_n}{}\sin(\omega t)
+    \{u_p(t)\}{}=\{U_n\}{}\sin(\omega t)
 \end{equation}
-Gdje je $\vtor{U_n}{}$ vektor koeficijenata.
+Gdje je $\{U_n\}$ vektor koeficijenata.
 Druga derivacija \eqref{eq:partikularno_pretpostavka} glasi:
 \begin{equation}\label{eq:partikularno_pretpostavka_dd}
-    \{\ddot{u}(t)\}=-\omega^2\vtor{U_n}{}\sin(\omega t)
+    \{\ddot{u}(t)\}=-\omega^2\{U_n\}\sin(\omega t)
 \end{equation}
 
 Uvrštavanjem \eqref{eq:partikularno_pretpostavka} i \eqref{eq:partikularno_pretpostavka_dd}
 u \eqref{eq:jednadzba_gibanja_matricno_kratko} dobijemo:
 \begin{equation}\label{eq:neodredjeni_koeficijenti_1}
-    -\omega^2\vtor{U_n}{}\mm\sin(\omega t) 
+    -\omega^2\{U_n\}\mm\sin(\omega t) 
     +
-    \vtor{U_n}{}\kk\sin(\omega t)
+    \{U_n\}\kk\sin(\omega t)
     =
-    \vtor{p}{}\sin(\omega t)
+    \{p\}\sin(\omega t)
 \end{equation}
 
 Nakon sređivanja, jednadžba \eqref{eq:neodredjeni_koeficijenti_1} poprima oblik:
 \begin{equation}\label{eq:neodredjeni_koeficijenti_2}
-    [\kk-\omega^2\mm]\vtor{U_n}{}=\vtor{p}{}
+    [\kk-\omega^2\mm]\{U_n\}=\{p\}
 \end{equation}
 
 %Matrica $[\kk-\omega^2\mm]$ predstavlja matricu dinamičke krutosti sustava s više stupnjeva
@@ -111,8 +111,8 @@ Množenjem jednadžbe \eqref{eq:neodredjeni_koeficijenti_2} s $[\kk-\omega^2\mm]
 dobijemo:
 \begin{equation}
     \begin{split}
-        \vtor{U_n}{}=[\kk-\omega^2\mm]^{-1}\vtor{p_n}{} \notag\\
-        \vtor{U_n}{}=\frac{1}{det[\kk-\omega^2\mm]}adj[\kk-\omega^2\mm]\vtor{p_n}{}\label{eqneodredjeni_koeficijenti_3}
+        \{U_n\}=[\kk-\omega^2\mm]^{-1}\{p_n\} \notag\\
+        \{U_n\}=\frac{1}{det[\kk-\omega^2\mm]}adj[\kk-\omega^2\mm]\{p_n\}\label{eqneodredjeni_koeficijenti_3}
     \end{split}
 \end{equation}
 
@@ -134,7 +134,7 @@ Odnosno u matričnom obliku:
         \end{Bmatrix}
 \end{equation}
 
-Komponente vektora $\vtor{U_n}{}$ glase:
+Komponente vektora $\{U_n\}$ glase:
 \begin{align}
     U_1=\frac{p_0(k_2-m_2\omega^2)}{m_1m_2(\omega^2-\omega_1^2)(\omega^2-\omega_2^2)} \label{eq:vtor_1_opce}\\
     U_2=\frac{p_0k_2}{m_1m_2(\omega^2-\omega_1^2)(\omega^2-\omega_2^2)}\label{eq:vtor_2_opce}
@@ -150,7 +150,7 @@ Uz $\omega_1=\sqrt{k/2m}$ i $\omega_2=\sqrt{2k/m}$ te dijeljenjem \eqref{eq:vtor
 dobijemo vektor dinamičkog koeficijenta pomaka (bez dimenzija), koji ovisi o
 omjerima frekvencija $\omega/\omega_1$ te $\omega/\omega_2$. Vektor je prikazan u nastavku
 \begin{equation}
-    \frac{2k}{p_0}\vtor{U}{}
+    \frac{2k}{p_0}\{U\}
     =
     \begin{Bmatrix}
         \ffrac{1-0.5(\omega/\omega_1)^2}
@@ -162,7 +162,7 @@ omjerima frekvencija $\omega/\omega_1$ te $\omega/\omega_2$. Vektor je prikazan 
 
 Prisilni dio odziva glasi:
 \begin{equation}
-    \vtor{u(t)}{} = \vtor{U}{}\sin(\omega t) = 
+    \{u(t)\} = \{U\}\sin(\omega t) = 
     \begin{Bmatrix}
         \ffrac{1-0.5(\omega/\omega_1)^2}
               {[1-(\omega/\omega_1)^2][1-(\omega/\omega_2)^2]}\\[12pt]
@@ -172,35 +172,35 @@ Prisilni dio odziva glasi:
     \sin(\omega t)
 \end{equation}
 
-Komponente vektora $\vtor{U}{}$ možemo iscrtati kao graf funkcije dinamičkog faktora
+Komponente vektora $\{U\}$ možemo iscrtati kao graf funkcije dinamičkog faktora
 $U_1/p_0/2k$ i $U_2/p_0/2k$ u ovisnosti o frekvencijskom omjeru $\omega/\omega_1$.
 
 \section{Interesantan postupak za rješavanje 2dof}
 Zadana je jednadžba gibanja prisilnog titranja sustava s dva stupnja slobode.
 \begin{equation}\label{eq:jdn_gibanja_osnovno}
-    \mm\vtor{u}{:}+\kk\vtor{u}{}=\vtor{p}{}\sin(\omega t)
+    \mm\{\ddot{u}\}+\kk\{u\}=\{p\}\sin(\omega t)
 \end{equation}
 
 Odziv sustava će biti sinusni, iste frekvencije kao i pobuda, pa rješenje
 pretpostavljamo u slijedećem obliku:
 \begin{equation}\label{eq:pretpostavljeno}
-    \vtor{U_p}{}=\vtor{U}{}\sin(\omega t)
+    \{U_p\}=\{U\}\sin(\omega t)
 \end{equation}
 
 Druga derivacija pretpostavljenog rješenja glasi:
 \begin{equation}\label{eq:pretpostavljeno_dd}
-    \vtor{U_p}{}=-\omega^2\vtor{U}{}\sin(\omega t)
+    \{U_p\}=-\omega^2\{U\}\sin(\omega t)
 \end{equation}
 
 Uvrštavanjem \eqref{eq:pretpostavljeno} i \eqref{eq:pretpostavljeno_dd} u
 \eqref{eq:jdn_gibanja_osnovno} dobijemo:
 \begin{equation}
-    -\omega^2\vtor{U}{}\mm\sin(\omega t) + \mm\vtor{U}{}\sin(\omega t) = \vtor{p}{}\sin(\omega t)
+    -\omega^2\{U\}\mm\sin(\omega t) + \mm\{U\}\sin(\omega t) = \{p\}\sin(\omega t)
 \end{equation}
 
 Te nakon sređivanja:
 \begin{equation}\label{eq:jdn_gibanja_part_1}
-    [\kk-\omega^2\mm]\vtor{U}{}=\vtor{p}{}
+    [\kk-\omega^2\mm]\{U\}=\{p\}
 \end{equation}
 
 Matrica $[\kk-\omega^2\mm]$ predstavlja matricu dinamičke krutosti.
@@ -338,12 +338,12 @@ Matrica $\mathbf{H}$ glasi:
 
 Uvrštavanjem \eqref{eq:matrica_frf} u \eqref{eq:jdn_gibanja_part_1} dobijemo:
 \begin{equation}
-    \mathbf{H}^{-1}\vtor{U}{}=\vtor{p}{}
+    \mathbf{H}^{-1}\{U\}=\{p\}
 \end{equation}
 
 Množenjem prethodnog izraza s $\mathbf{H}$:
 \begin{equation}
-    \vtor{U}{} = \mathbf{H}\vtor{p}{}
+    \{U\} = \mathbf{H}\{p\}
 \end{equation}
 
 Raspisivanjem prethodne jednadžbe:
@@ -366,7 +366,7 @@ Raspisivanjem prethodne jednadžbe:
     \end{Bmatrix}
 \end{equation}
 
-Te konačno, vektor $\vtor{U}{}$ glasi:
+Te konačno, vektor $\{U\}$ glasi:
 \begin{equation}\label{eq:vektor_u_konacno}
     \begin{Bmatrix}
         U_1\\
@@ -380,7 +380,7 @@ Te konačno, vektor $\vtor{U}{}$ glasi:
     \end{Bmatrix}
 \end{equation}
 
-Dijeljenjem vektora $\vtor{U}{}$ s $p_0/2k$ dobijemo slijedeće:
+Dijeljenjem vektora $\{U\}$ s $p_0/2k$ dobijemo slijedeće:
 \begin{equation}
     \begin{Bmatrix}
         U_1\\
@@ -410,7 +410,7 @@ prikazani su u nastavku.
 Prisilni dio odziva glasi:
 \begin{equation}
     \begin{split}
-        \vtor{u(t)}{} = \vtor{U}{}\; sin(\omega t)
+        \{u(t)\} = \{U\} sin(\omega t)
         %\vtor{u(t)}{}=
         =
         \frac{1}{\left(1-\left(\ffrac{\omega_1}{\omega}\right)^2\right)\left(1-\left(\ffrac{\omega_2}{\omega}\right)^2\right)}

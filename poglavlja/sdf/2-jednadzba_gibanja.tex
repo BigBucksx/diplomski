@@ -2,26 +2,6 @@
 Dijagram sila za sustav s prigušenjem na koji djeluje sila pobude $p(t)$ prikazan je
 na slijedećoj slici:
 
-\begin{figure}[H]
-    \begin{subfigure}[b][][l]{0.5\textwidth}
-        \input{skice/sdf/sile-priguseni-ekvivalentni-sustav-sdf}
-        \caption{}
-        \label{fig:sile-priguseni-ekvivalentni-sustav-sdf}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b][][r]{0.5\textwidth}
-        \input{skice/sdf/sile-nepriguseni-ekvivalentni-sustav-sdf}
-        \caption{}
-        \label{fig:sile-nepriguseni-ekvivalentni-sustav-sdf}
-    \end{subfigure}
-    \caption{Dijagram sila;
-        (\subref{fig:sile-priguseni-ekvivalentni-sustav-sdf})
-            prigušenog sustava; 
-    (\subref{fig:sile-nepriguseni-ekvivalentni-sustav-sdf})
-            neprigušenog sustava}
-    \label{fig:dijagrami_sila}
-\end{figure}
-
 
 Prema drugom Newtonovom aksiomu vrijedi:
 \begin{align}
@@ -126,7 +106,6 @@ Pri čemu je:
 \end{tabular}
 \end{table}
 
-\newpage
 Da bi bilo lakše naći inverze odziva u frekvencijskoj domeni potrebno je funkciju  
 $H(s)$ prikazati u tabličnom obliku\footnote{postupak svođenja prijenosne funkcije
 sustava na tablični oblik prikazan je u slijedećem pogavlju}.
@@ -248,7 +227,6 @@ neovisno o početnim uvjetima. Karakteristike prisilnog dijela odziva ponajviše
 o frekvenciji i amplitudi pobude, a zatim i o karakteristikama sustava (o prigušenju
 te prirodnoj frekvenciji sustava). Karakteristike prisilnog dijela odziva detaljnije će se
 razmatrati u slijedećim poglavljima.
-\newpage
 
 Uvrštavanjem \eqref{eq:konvolucijski_integral_rjesenje} u
 \eqref{eq:inverz_drugi_korak}, te sređivanjem dobijemo ukupno rješenje
@@ -274,13 +252,6 @@ Gdje je:
 
 Graf odziva prigušenog sustava s jednim stupnjem slobode za homogene početne
 uvjete $u(0)=0$ i $\dot{u}(0)=0$ prikazan je na slijedećoj slici.
-\begin{figure}[H]
-    \input{./grafovi/sdf/odziv-priguseno}
-    \label{fig:odziv-priguseno}
-    \caption{Odziv prigušenog sustava na pobudu sinusnom silom za
-    $\omega/\omega_n=0.2$ i $\zeta=0.05$}
-\end{figure}
-\newpage
 
 Neprigušeni sustav možemo shvatiti kao poseban slučaj prigušenog sustava za slučaj
 $c=0$ odnosno $\zeta=0$, pa diferencijalna jednadžba sustava postaje:
@@ -317,12 +288,5 @@ koje glasi:
 	}_{\text{\textbf{prisilni dio odziva}}}
 \end{equation}
 
-\begin{figure}[H]
-    \input{./grafovi/sdf/odziv-nepriguseno}
-    \label{fig:odziv-nepriguseno}
-    \caption{Odziv neprigusenog sustava za homogene početne uvjete i
-    $\omega/\omega_n=0.2$}
-\end{figure}
-\newpage
 
 

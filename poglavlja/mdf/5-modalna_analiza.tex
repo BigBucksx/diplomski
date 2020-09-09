@@ -9,7 +9,7 @@ kombinacija odziva pojedinih modova.
 Razmotrimo jednadžbu gibanja sustava s više stupnjeva slobode pobuđenog proizvoljnom
 silom:
 \begin{equation}\label{eq:mdof_jdn_gibanja_opca_pobuda}
-    \mm\vtor{u}{:} + \kk\vtor{u}{} = \vtor{p(t)}{}
+    \mm\{\ddot{u}\} + \kk\{u\} = \{p(t)\}
 \end{equation}
 
 Klasično rješenje jednadžbe gibanja \eqref{eq:mdof_jdn_gibanja_opca_pobuda}
@@ -74,10 +74,10 @@ Da bismo odredili ukupni odziv sustava s $N$-stupnjeva slobode, potrebno je rije
 $N$ modalnih jednadžbi, oblika definiranog pod \eqref{eq:mdf_modalna_jednadzba_sredjeno}.
 Matrični zapis sustava modalnih jednadžbi prikazan je u nastavku.
 \begin{equation}\label{eq:sustav_modalnih_jednadzbi}
-    \M\vtor{q}{:} + \K\vtor{q}{}=\vtor{P(t)}{}
+    \M\{q\} + \K\{q\}=\{P(t)\}
 \end{equation}
 
-Gdje je $\M$ matrica modalnih masa, $\K$ matrica modalnih krutosti, $\vtor{P(t)}{}$
+Gdje je $\M$ matrica modalnih masa, $\K$ matrica modalnih krutosti, $\{P(t)\}$
 vektor poopćenih opterećenja. Iz \eqref{eq:modalna_masa_matrica} i
 \eqref{eq:modalna_krutost_matrica} znamo da su matrice $\M$ i $\K$ dijagonalne što
 znači da je \eqref{eq:sustav_modalnih_jednadzbi} sustav međusobno neovisnih jednadžbi.
